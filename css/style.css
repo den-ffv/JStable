@@ -8,9 +8,6 @@ body{
   width: min(100% - 20px, 1100px);
   margin-inline: auto;
 }
-.section {
-  
-}
 .section-up-text{
   padding: 30px 0px 50px 0px;
   font-size: 50px;
@@ -36,9 +33,9 @@ body{
   background: rgb(187, 186, 186);
 }
 .wrapper {
+  width: min(100% - 20px, 400px);
   padding: 50px 0px 50px 0px;
-  max-width: 400px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 .wrapper li {
   font-size: 20px;
