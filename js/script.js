@@ -1,4 +1,18 @@
+import {dataTadle} from "./data.js";
 const UL = document.querySelectorAll('ul>li>span');
+
+const table = document.querySelector('#table');
+
+dataTadle.forEach((elem) => {
+  const row = document.createElement('tr');
+  row.innerHTML = `
+        <td>${elem.coutru}</td>
+        <td>${elem.city}</td>
+        <td>${elem.currency}</td>
+  `;
+  table.appendChild(row)
+})
+
 
 document.querySelector('table').onclick = function(event) {
   
@@ -20,5 +34,4 @@ function outText(text) {
   for(let i = 0; i < text.length; i++){
     UL[i].textContent = text[i];
   }
-
 }
